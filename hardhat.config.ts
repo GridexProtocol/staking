@@ -27,6 +27,11 @@ const config: HardhatUserConfig = {
             accounts: [`${process.env.PRIVATE_KEY}`],
         },
     },
+    etherscan: {
+        apiKey: {
+            arbitrumOne: `${process.env.ARBISCAN_API_KEY}`,
+        },
+    },
 };
 
 export default config;
